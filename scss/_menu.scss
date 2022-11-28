@@ -1,0 +1,36 @@
+@use "colors";
+
+/*Verze pro telefon*/
+.menu__list {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    background-color: colors.$dark_blue;
+}
+
+.menu__link {
+    padding: 10px;
+    display: block;
+    color: colors.$white;
+    text-decoration: none;
+
+    &:hover {
+        background-color: colors.$blue;
+    }
+}
+
+/*Verze pro tablet*/
+@media screen and (min-width: 540px) {
+    .menu__list {
+        display: flex;
+        justify-content: end;
+        gap: 10px;
+    }
+    
+}
+
+/*Verze pro počítač*/
+@media screen and (min-width: 960px) {
+    
+}

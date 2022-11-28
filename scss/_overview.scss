@@ -1,0 +1,58 @@
+@use "colors";
+
+//komponenta overview
+.overview {
+    padding: 20px;
+    text-align: center;
+}
+
+.overview__name {
+    color: colors.$dark_blue;
+    text-align: right;
+
+    &::after {
+        content: "";
+        display: block;
+        background-color: colors.$blue;
+        width: 100%;
+        border-radius: 50%;
+        height: 2px;
+    }
+}
+
+.overview__link {
+    background-color: colors.$blue;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: colors.$white;
+}
+
+.overview__image {
+    max-width: 33%;
+    border-radius: 10px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+/*Verze pro tablet*/
+@media screen and (min-width: 540px) {
+    .overview {
+        display: flex;
+        gap: 10px;
+    }
+
+    .overview__text {
+
+    }
+
+    .overview__image {
+        order: -1;
+    }
+    }
+
+
+/*Verze pro počítač*/
+@media screen and (min-width: 960px) {
+    
+}

@@ -1,0 +1,33 @@
+@use "colors";
+
+//obecné
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+body {
+    margin: 0;
+    color: colors.$black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: colors.$light_blue;
+    
+}
+
+
+h1, h2, ul, li {
+    margin: 0;
+}
+
+/*Verze pro tablet*/
+@media screen and (min-width: 540px) {
+    
+}
+
+/*Verze pro počítač*/
+@media screen and (min-width: 960px) {
+    main {
+        max-width: 1040px;
+        margin: 0 auto;
+    }
+}
