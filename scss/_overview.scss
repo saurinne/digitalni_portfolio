@@ -7,13 +7,13 @@
 }
 
 .overview__name {
-    color: colors.$dark_blue;
+    //color: colors.$dark_blue;
     text-align: right;
 
     &::after {
         content: "";
         display: block;
-        background-color: colors.$blue;
+        background-color: colors.$decor;
         width: 100%;
         border-radius: 50%;
         height: 2px;
@@ -21,35 +21,48 @@
 }
 
 .overview__link {
-    background-color: colors.$blue;
+    background-color: colors.$decor;
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
     color: colors.$white;
+
+    &:hover {
+        background-color: colors.$black;
+    }
 }
 
 .overview__image {
-    max-width: 33%;
+    max-width: 100%;
     border-radius: 10px;
     margin-top: 10px;
     object-fit: cover;
 }
 
+.overview + .overview {
+    margin-top: 20px;
+}
+
 /*Verze pro tablet*/
 @media screen and (min-width: 540px) {
     .overview {
-        display: flex;
+        display: grid;
         gap: 10px;
+
+        &--left {
+            grid-template-columns: 1fr 2fr;
+        }
+
+        &--right {
+            grid-template-columns: 2fr 1fr;
+        }
     }
 
-    .overview__text {
 
-    }
-
-    .overview__image {
+    .overview--left .overview__image {
         order: -1;
     }
-    }
+}
 
 
 /*Verze pro počítač*/

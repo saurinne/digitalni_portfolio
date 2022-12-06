@@ -3,7 +3,6 @@
 .intro {
     //obecné
     padding: 40px 20px 20px 20px;
-    background: linear-gradient(colors.$light_blue, colors.$dark_blue);
 
     //texty
     text-align: right; 
@@ -14,7 +13,26 @@
     font-size: 24px;
     font-weight: 500;
 } 
+
 .intro__description {
     font-size: 18px;
     font-weight: 400;
+}
+
+/*Verze pro tablet*/
+@media screen and (min-width: 540px) {
+
+    
+}
+
+/*Verze pro počítač*/
+@media screen and (min-width: 960px) {
+
+    .intro__name {
+        font-size: 32px;
+    } 
+    
+    .intro__description {
+        font-size: 24px;
+    }
 }

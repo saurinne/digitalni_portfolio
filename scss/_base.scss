@@ -10,7 +10,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    background-color: colors.$light_blue;
     
 }
 
@@ -26,7 +25,7 @@ h1, h2, ul, li {
 
 /*Verze pro počítač*/
 @media screen and (min-width: 960px) {
-    main {
+    body {
         max-width: 1040px;
         margin: 0 auto;
     }

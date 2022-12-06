@@ -13,7 +13,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 300;
-  background-color: #D2E0EF;
 }
 
 h1, h2, ul, li {
@@ -23,28 +22,38 @@ h1, h2, ul, li {
 /*Verze pro tablet*/
 /*Verze pro počítač*/
 @media screen and (min-width: 960px) {
-  main {
+  body {
     max-width: 1040px;
     margin: 0 auto;
   }
 }
 /*Verze pro telefon*/
+.menu::after, .menu::before {
+  content: "";
+  display: block;
+  background-color: #022F40;
+  width: 100%;
+  border-radius: 50%;
+  height: 2px;
+}
+
 .menu__list {
   list-style: none;
   width: 100%;
   padding: 0;
   text-align: center;
-  background-color: #2A5079;
+  background-color: #D7D6D6;
 }
 
 .menu__link {
   padding: 10px;
   display: block;
-  color: #FFFFFF;
+  color: #020202;
   text-decoration: none;
 }
 .menu__link:hover {
-  background-color: #3A6EA5;
+  background-color: #022F40;
+  color: #FFFFFF;
 }
 
 /*Verze pro tablet*/
@@ -60,13 +69,13 @@ h1, h2, ul, li {
   margin: 20px;
   padding: 10px;
   text-align: center;
-  background-color: #020202;
+  background-color: #022F40;
   border-radius: 30px;
 }
 
 .bubble_text {
   font-style: italic;
-  color: #E0E1E1;
+  color: #FFFFFF;
 }
 
 .bubble--left {
@@ -79,7 +88,6 @@ h1, h2, ul, li {
 
 .intro {
   padding: 40px 20px 20px 20px;
-  background: linear-gradient(#D2E0EF, #2A5079);
   text-align: right;
 }
 
@@ -93,48 +101,103 @@ h1, h2, ul, li {
   font-weight: 400;
 }
 
+/*Verze pro tablet*/
+/*Verze pro počítač*/
+@media screen and (min-width: 960px) {
+  .intro__name {
+    font-size: 32px;
+  }
+  .intro__description {
+    font-size: 24px;
+  }
+}
 .overview {
   padding: 20px;
   text-align: center;
 }
 
 .overview__name {
-  color: #2A5079;
   text-align: right;
 }
 .overview__name::after {
   content: "";
   display: block;
-  background-color: #3A6EA5;
+  background-color: #022F40;
   width: 100%;
   border-radius: 50%;
   height: 2px;
 }
 
 .overview__link {
-  background-color: #3A6EA5;
+  background-color: #022F40;
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
   color: #FFFFFF;
 }
+.overview__link:hover {
+  background-color: #020202;
+}
 
 .overview__image {
-  max-width: 33%;
+  max-width: 100%;
   border-radius: 10px;
   margin-top: 10px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+.overview + .overview {
+  margin-top: 20px;
+}
+
 /*Verze pro tablet*/
 @media screen and (min-width: 540px) {
   .overview {
-    display: flex;
+    display: grid;
     gap: 10px;
   }
-  .overview__image {
+  .overview--left {
+    grid-template-columns: 1fr 2fr;
+  }
+  .overview--right {
+    grid-template-columns: 2fr 1fr;
+  }
+  .overview--left .overview__image {
     order: -1;
   }
 }
-/*Verze pro počítač*//*# sourceMappingURL=style.css.map */
+/*Verze pro počítač*/
+.footer {
+  text-align: center;
+}
+.footer::before {
+  content: "";
+  display: block;
+  background-color: #022F40;
+  width: 100%;
+  border-radius: 50%;
+  height: 2px;
+}
+
+.footer__image {
+  width: 50px;
+}
+
+.footer__text {
+  font-size: 12px;
+  color: #716F6F;
+}
+
+/*Verze pro tablet*/
+@media screen and (min-width: 540px) {
+  .footer__image {
+    width: 60px;
+  }
+}
+/*Verze pro počítač*/
+@media screen and (min-width: 960px) {
+  .footer__image {
+    width: 70px;
+  }
+}/*# sourceMappingURL=style.css.map */
