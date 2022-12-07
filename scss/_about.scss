@@ -1,0 +1,24 @@
+@use "colors";
+.about {
+    padding: 20px;
+}
+
+/*Verze pro tablet*/
+@media screen and (min-width: 540px) {
+
+}
+
+/*Verze pro počítač*/
+@media screen and (min-width: 960px) {
+    .about {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;    
+    }
+    
+    
+    .about__headline {
+        grid-column: 1 / 3;
+    }
+}
+

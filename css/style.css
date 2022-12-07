@@ -210,7 +210,7 @@ h1, h2, ul, li {
   }
 }
 .projects {
-  margin: 20px 0;
+  padding: 20px 10px;
 }
 
 .projects__project {
@@ -260,6 +260,22 @@ h1, h2, ul, li {
   .projects__conteiner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.about {
+  padding: 20px;
+}
+
+/*Verze pro tablet*/
+/*Verze pro počítač*/
+@media screen and (min-width: 960px) {
+  .about {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+  .about__headline {
+    grid-column: 1/3;
   }
 }
 .footer {
