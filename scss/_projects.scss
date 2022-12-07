@@ -1,0 +1,59 @@
+@use "colors";
+
+.projects {
+    margin: 20px 0;
+}
+
+.projects__project {
+    padding: 20px 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    display: grid; 
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.projects__headline {
+    text-align: right;
+
+    &::after {
+        content: "";
+        display: block;
+        background-color: colors.$decor;
+        width: 100%;
+        border-radius: 50%;
+        height: 2px;
+    }
+}
+
+.projects__name {
+    margin: 0;
+}
+
+.projects__link {
+    background-color: colors.$decor;
+    border: none;
+    border-radius: 20px;
+    color: colors.$white;
+
+    &:hover {
+        background-color: colors.$black;
+    }
+}
+
+/*Verze pro tablety*/
+@media screen and (min-width: 540px) {
+    .projects__conteiner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*Verze pro počítač*/
+@media screen and (min-width: 960px) {
+    .projects__conteiner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

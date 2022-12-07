@@ -169,12 +169,10 @@ h1, h2, ul, li {
 }
 /*Verze pro počítač*/
 .subjects {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding: 20px;
 }
 
 .subjects__semester {
-  grid-column: 1/3;
   text-align: right;
 }
 .subjects__semester::after {
@@ -197,10 +195,73 @@ h1, h2, ul, li {
   color: #FFFFFF;
 }
 
-.subjects + .subjects {
-  margin-bottom: 30px;
+/*Verze pro tablet
+@media screen and (min-width: 540px) {
+
+}*/
+/*Verze pro počítač*/
+@media screen and (min-width: 960px) {
+  .subjects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .subjects__semester {
+    grid-column: 1/3;
+  }
+}
+.projects {
+  margin: 20px 0;
 }
 
+.projects__project {
+  padding: 20px 10px;
+  margin: 10px;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+.projects__headline {
+  text-align: right;
+}
+.projects__headline::after {
+  content: "";
+  display: block;
+  background-color: #022F40;
+  width: 100%;
+  border-radius: 50%;
+  height: 2px;
+}
+
+.projects__name {
+  margin: 0;
+}
+
+.projects__link {
+  background-color: #022F40;
+  border: none;
+  border-radius: 20px;
+  color: #FFFFFF;
+}
+.projects__link:hover {
+  background-color: #020202;
+}
+
+/*Verze pro tablety*/
+@media screen and (min-width: 540px) {
+  .projects__conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/*Verze pro počítač*/
+@media screen and (min-width: 960px) {
+  .projects__conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .footer {
   text-align: center;
 }
