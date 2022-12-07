@@ -168,6 +168,39 @@ h1, h2, ul, li {
   }
 }
 /*Verze pro počítač*/
+.subjects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.subjects__semester {
+  grid-column: 1/3;
+  text-align: right;
+}
+.subjects__semester::after {
+  content: "";
+  display: block;
+  background-color: #022F40;
+  width: 100%;
+  border-radius: 50%;
+  height: 2px;
+}
+
+.subjects__link {
+  color: #020202;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+}
+.subjects__link:hover {
+  background-color: #022F40;
+  color: #FFFFFF;
+}
+
+.subjects + .subjects {
+  margin-bottom: 30px;
+}
+
 .footer {
   text-align: center;
 }
