@@ -1,0 +1,33 @@
+@use "colors";
+
+.article {
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto 0px auto;
+}
+
+.article__header {
+
+    &::after {
+        content: "";
+        display: block;
+        background-color: colors.$decor;
+        width: 100%;
+        border-radius: 50%;
+        height: 2px;
+    }
+}
+
+.article__title {
+    text-align: center;
+}
+
+
+.article__author, .article__date {
+    color: colors.$dark_grey;
+    margin: 5px;
+}
+
+img {
+    max-width: 100%;
+}

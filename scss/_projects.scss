@@ -42,6 +42,11 @@
     }
 }
 
+.projects_url {
+    text-decoration: none;
+    color: white;
+}
+
 /*Verze pro tablety*/
 @media screen and (min-width: 540px) {
     .projects__conteiner {

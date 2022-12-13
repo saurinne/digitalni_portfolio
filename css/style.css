@@ -248,6 +248,11 @@ h1, h2, ul, li {
   background-color: #020202;
 }
 
+.projects_url {
+  text-decoration: none;
+  color: white;
+}
+
 /*Verze pro tablety*/
 @media screen and (min-width: 540px) {
   .projects__conteiner {
@@ -281,6 +286,34 @@ h1, h2, ul, li {
     margin-top: 0;
   }
 }
+.article {
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto 0px auto;
+}
+
+.article__header::after {
+  content: "";
+  display: block;
+  background-color: #022F40;
+  width: 100%;
+  border-radius: 50%;
+  height: 2px;
+}
+
+.article__title {
+  text-align: center;
+}
+
+.article__author, .article__date {
+  color: #716F6F;
+  margin: 5px;
+}
+
+img {
+  max-width: 100%;
+}
+
 .footer {
   text-align: center;
 }
