@@ -113,7 +113,7 @@ h1, h2, ul, li {
 }
 .overview {
   padding: 20px;
-  text-align: center;
+  text-align: justify;
 }
 
 .overview__name {
@@ -130,10 +130,12 @@ h1, h2, ul, li {
 
 .overview__link {
   background-color: #022F40;
+  display: block;
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
   color: #FFFFFF;
+  margin: 0 auto;
 }
 .overview__link:hover {
   background-color: #020202;
@@ -271,6 +273,10 @@ h1, h2, ul, li {
   padding: 20px;
 }
 
+.about__paragraf {
+  text-align: justify;
+}
+
 /*Verze pro tablet*/
 /*Verze pro počítač*/
 @media screen and (min-width: 960px) {
@@ -308,6 +314,10 @@ h1, h2, ul, li {
 .article__author, .article__date {
   color: #716F6F;
   margin: 5px;
+}
+
+.article__content {
+  text-align: justify;
 }
 
 img {
