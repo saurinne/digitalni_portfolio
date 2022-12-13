@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--hlavička html-->
+    {% include 'partials/head.njk' %}
+
+<body>
+    <!--hlavička stránky a menu-->
+    {% include 'partials/header.njk' %}
+
+    <main>
+        <!-- obsah-->
+        {{ content | safe }}
+
+    </main>
+    <!--patička-->
+    {% include 'partials/footer.njk' %}
+    
+</body>
+</html>
