@@ -221,7 +221,7 @@ h1, h2, ul, li {
   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-rows: 2fr 3fr 30px;
 }
 
 .projects__headline {
