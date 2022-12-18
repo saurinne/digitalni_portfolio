@@ -153,6 +153,10 @@ h1, h2, ul, li {
   margin-top: 20px;
 }
 
+.overview__description {
+  padding: 10px;
+}
+
 /*Verze pro tablet*/
 @media screen and (min-width: 540px) {
   .overview {
