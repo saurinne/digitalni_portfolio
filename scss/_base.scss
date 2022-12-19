@@ -18,6 +18,10 @@ h1, h2, ul, li {
     margin: 0;
 }
 
+a {
+    color: colors.$decor;
+}
+
 /*Verze pro tablet*/
 @media screen and (min-width: 540px) {
     

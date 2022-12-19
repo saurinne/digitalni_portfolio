@@ -19,6 +19,10 @@ h1, h2, ul, li {
   margin: 0;
 }
 
+a {
+  color: #022F40;
+}
+
 /*Verze pro tablet*/
 /*Verze pro počítač*/
 @media screen and (min-width: 960px) {
@@ -67,7 +71,7 @@ h1, h2, ul, li {
 /*Verze pro počítač*/
 .bubble {
   margin: 20px;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   background-color: #022F40;
   border-radius: 30px;
@@ -113,7 +117,7 @@ h1, h2, ul, li {
 }
 .overview {
   padding: 20px;
-  text-align: justify;
+  text-align: center;
 }
 
 .overview__name {
@@ -130,15 +134,18 @@ h1, h2, ul, li {
 
 .overview__link {
   background-color: #022F40;
-  display: block;
-  border: none;
   padding: 10px 20px;
   border-radius: 20px;
   color: #FFFFFF;
-  margin: 0 auto;
+  text-decoration: none;
+  font-size: 15px;
 }
 .overview__link:hover {
   background-color: #020202;
+}
+
+.overview__description {
+  text-align: justify;
 }
 
 .overview__image {
@@ -199,6 +206,10 @@ h1, h2, ul, li {
 .subjects__link:hover {
   background-color: #022F40;
   color: #FFFFFF;
+}
+
+.subjects__item--notlink {
+  padding: 5px 0;
 }
 
 /*Verze pro tablet
@@ -326,6 +337,10 @@ h1, h2, ul, li {
 
 img {
   max-width: 100%;
+}
+
+.blog__headline {
+  padding: 20px 20px 0 20px;
 }
 
 .footer {

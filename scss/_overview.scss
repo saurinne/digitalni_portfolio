@@ -3,7 +3,7 @@
 //komponenta overview
 .overview {
     padding: 20px;
-    text-align: justify;
+    text-align: center;
 }
 
 .overview__name {
@@ -22,16 +22,19 @@
 
 .overview__link {
     background-color: colors.$decor;
-    display: block;
-    border: none;
     padding: 10px 20px;
     border-radius: 20px;
     color: colors.$white;
-    margin: 0 auto;
-
+    text-decoration: none;
+    font-size: 15px;
+    
     &:hover {
         background-color: colors.$black;
     }
+}
+
+.overview__description {
+    text-align: justify;
 }
 
 .overview__image {

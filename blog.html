@@ -2,7 +2,7 @@
 layout: layouts/general_template.njk 
 title: Blog
 ---
-<h1>Blog</h1>
+<h1 class="blog__headline">Blog</h1>
 
 <section class="projects projects--blog">
     <div class="projects__conteiner">
@@ -14,7 +14,6 @@ title: Blog
                 <p class="projects__description">{{ article.data.perex }}</p>
                 <button class="projects__link"><a class="projects_url" href="{{ article.url }}">Celý článek</a></button>
             </div>
-
 
         {% endfor %}
 
