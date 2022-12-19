@@ -35,11 +35,29 @@ title: Digitální portfolio
 <section class="overview overview--left">
     <div class="overview__text">
         <h2 class="overview__name">Projekty</h2>
-        <p class="overview__description">Nějen ve škole se člověk učí a spousta mých aktivit se protíná s tím, co se učím ve škole.
+        <p class="overview__description">Nejen ve škole se člověk učí a spousta mých aktivit se protíná s tím, co se učím ve škole.
             Z tohoto důvodu jsem do portfolia zařadila i přehled svých drobných projektů, kterým se věnuji. Domnívám se totiž, 
             že jsou pro mé vzdělání a rozvoj mnohdy stejně důležité jako podněty z univerzity. 
         </p>
         <a class="overview__link" href="/about/">Více o projektech</a>
     </div>
         <img class="overview__image" src="/images/study.jpg" alt="Vizualizace studia - knihy, pravítka, čepice">
+</section>
+
+
+<section class="projects">
+    <h2 class="projects__headline">Nejnovější příspěvky</h2>
+    <div class="projects__conteiner">
+
+        {% for article in collections.blog | reverse | limit(3) %}
+
+            <div class="projects__project">
+                <h3 class="projects__name">{{ article.data.title }}</h3>
+                <p class="projects__description">{{ article.data.perex }}</p>
+                <button class="projects__link"><a class="projects_url" href="{{ article.url }}">Celý článek</a></button>
+            </div>
+
+        {% endfor %}
+
+    </div>
 </section>

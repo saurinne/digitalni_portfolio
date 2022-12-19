@@ -241,6 +241,7 @@ a {
 
 .projects__headline {
   text-align: right;
+  margin-bottom: 10px;
 }
 .projects__headline::after {
   content: "";
