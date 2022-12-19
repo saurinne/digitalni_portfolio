@@ -298,6 +298,10 @@ a {
   text-align: justify;
 }
 
+.about__item {
+  padding: 5px 0;
+}
+
 /*Verze pro tablet*/
 /*Verze pro počítač*/
 @media screen and (min-width: 960px) {
