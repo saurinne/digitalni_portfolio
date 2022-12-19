@@ -53,6 +53,10 @@
     padding: 10px;
 }
 
+.overview + .projects {
+    margin-top: 20px;
+}
+
 /*Verze pro tablet*/
 @media screen and (min-width: 540px) {
     .overview {

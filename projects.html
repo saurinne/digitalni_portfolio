@@ -11,59 +11,29 @@ title: Projekty
 <section class="projects">
     <h2 class="projects__headline">Čemu se aktuálně věnuji?</h2>
     <div class="projects__conteiner">
-        <div class="projects__project">
-            <h3 class="projects__name">Vyhodnocení dat pro asociaci</h3>
-            <p class="projects__description">Vyhodnocuju data, no... pak to nějak popíšu, jak se mi bude chtít</p>
-            <button class="projects__link" href="#">Zjistit více</button>
-        </div>
+        {% for article in collections.project_current %}
 
-        <div class="projects__project">
-            <h3 class="projects__name">Kódování - digitální portfolio</h3>
-            <p class="projects__description">dělám tady na tomto v rámci kurzu, stále rozpracováno, 
-                další popisky a blablabl gksdftnh gfdkht fd ztn sd</p>
-            <button class="projects__link" href="#">Zjistit více</button>
-        </div>
+            <div class="projects__project">
+                <h3 class="projects__name">{{ article.data.title }}</h3>
+                <p class="projects__description">{{ article.data.perex }}</p>
+                <button class="projects__link"><a class="projects_url" href="{{ article.url }}">Celý článek</a></button>
+            </div>
 
-        <div class="projects__project">
-            <h3 class="projects__name">Udělat CAE!</h3>
-            <p class="projects__description">Dlouhá cesta ke zlepšení angličtiny a získání certifikátů</p>
-            <button class="projects__link" href="#">Zjistit více</button>
-        </div>
-
-        <div class="projects__project">
-            <h3 class="projects__name">Práh - koordinace webu zotavení</h3>
-            <p class="projects__description">Dobrovolnická pozice zahrnutící koordinaci obsahu a blablabla</p>
-            <button class="projects__link" href="#">Zjistit více</button>
-        </div>
+        {% endfor %}
     </div>
 </section>
 
 <section class="projects">
     <h2 class="projects__headline">Minulé </h2>
     <div class="projects__conteiner">
-        <div class="projects__project">
-            <h3 class="projects__name">Návrh wellbeing dotazníku pro Česko.Digital</h3>
-            <p class="projects__description">V rámci změn jsme navrhovali nový pravidelný čtvrtletní dotazník 
-                pro monitoring wellbeingu.</p>
-            <button class="projects__link" href="#">Zjistit více</button>
-        </div>
+        {% for article in collections.project_past | reverse %}
 
-        <div class="projects__project">
-            <h3 class="projects__name">Vyhodnocení dat týkající se wellbeingu pro Česko.Digital</h3>
-            <p class="projects__description">Vyhodnocovali jsme data, dvakrát, za použití těchto technik...</p>
-            <button class="projects__link" href="#">Zjistit více</button>
-        </div>
+            <div class="projects__project">
+                <h3 class="projects__name">{{ article.data.title }}</h3>
+                <p class="projects__description">{{ article.data.perex }}</p>
+                <button class="projects__link"><a class="projects_url" href="{{ article.url }}">Celý článek</a></button>
+            </div>
 
-        <div class="projects__project">
-            <h3 class="projects__name">Organizace nějaké akce</h3>
-            <p class="projects__description">Organizovala jsem nějaké akce, tak sem můžu nějakou vypsat</p>
-            <button class="projects__link" href="#">Zjistit více</button>
-        </div>
-
-        <!--<div class="projects__project">
-            <h3 class="projects__name"></h3>
-            <p class="projects__description"></p>
-            <button class="projects__link" href="#">Zjistit více</button>
-        </div>-->
+        {% endfor %}
     </div>
 </section>

@@ -2,7 +2,7 @@
 layout: layouts/article.njk
 title: CAE! Protože bez angličtiny to nejde. 
 author: Petra
-datum: 10. duben 2022
+datum: 15. prosinec 2022
 tags: ['blog', 'project_current']
 perex: O tom, jak se snažím si konečně dodělat certifikát z angličtiny. 
 ---
