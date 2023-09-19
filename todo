@@ -1,7 +1,6 @@
-- upravit barvu odkazů ve článcích - DONE
-- udělat odskok nadpisů ve článcích - DONE
-- fakt se mi nelíbí občasné roztahování tlačítek v blogu - DONE
+
 - udělat projekty formou tagů a jejich výpisu
 - obsah k ismk58, 55, 04, 05, 06
-- naformátovat nápis blog v blogu - DONE
-- otočit pořadí, v jakém jsou články zobrazené - DONE
+- upravit tlačítka na možnost zmáčknout celé
+- přidat hamburger menu
+- přidat možnost komentářů - https://www.mongodb.com/developer/languages/javascript/add-comments-section-eleventy-website-mongodb-netlify/
